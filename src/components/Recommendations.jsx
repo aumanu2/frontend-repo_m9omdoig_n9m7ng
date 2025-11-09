@@ -3,11 +3,11 @@ import { Star, MapPin } from "lucide-react";
 
 const SAMPLE_DISHES = [
   { id: 1, name: "Spicy Dan Dan Noodles", cuisine: "Chinese", diet: "Any", spice: 4, rating: 4.7, place: "Sichuan Alley", image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" },
-  { id: 2, name: "Margherita Pizza", cuisine: "Italian", diet: "Vegetarian", spice: 0, rating: 4.6, place: "Napoli Pizzeria", image: "https://images.unsplash.com/photo-1548365328-8b849ce5fdd4?q=80&w=1200&auto=format&fit=crop" },
+  { id: 2, name: "Margherita Pizza", cuisine: "Italian", diet: "Vegetarian", spice: 0, rating: 4.6, place: "Napoli Pizzeria", image: "https://images.unsplash.com/photo-1664337873053-840ea51d271d?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxTcGljeSUyMERhbiUyMERhbiUyME5vb2RsZXN8ZW58MHwwfHx8MTc2MjY4MDIxOXww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" },
   { id: 3, name: "Vegan Buddha Bowl", cuisine: "Mediterranean", diet: "Vegan", spice: 1, rating: 4.5, place: "Green Leaf", image: "https://images.unsplash.com/photo-1547496502-affa22d38842?q=80&w=1200&auto=format&fit=crop" },
-  { id: 4, name: "Chicken Biryani", cuisine: "Indian", diet: "Any", spice: 3, rating: 4.8, place: "Biryani House", image: "https://images.unsplash.com/photo-1633945274405-2f1b9b9dd45b?q=80&w=1200&auto=format&fit=crop" },
+  { id: 4, name: "Chicken Biryani", cuisine: "Indian", diet: "Any", spice: 3, rating: 4.8, place: "Biryani House", image: "https://images.unsplash.com/photo-1664337873053-840ea51d271d?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxTcGljeSUyMERhbiUyMERhbiUyME5vb2RsZXN8ZW58MHwwfHx8MTc2MjY4MDIxOXww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" },
   { id: 5, name: "Tacos al Pastor", cuisine: "Mexican", diet: "Any", spice: 2, rating: 4.6, place: "El Rancho", image: "https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?q=80&w=1200&auto=format&fit=crop" },
-  { id: 6, name: "Salmon Nigiri", cuisine: "Japanese", diet: "Any", spice: 0, rating: 4.9, place: "Sushi Go", image: "https://images.unsplash.com/photo-1547936782-6d8d78c80f3b?q=80&w=1200&auto=format&fit=crop" },
+  { id: 6, name: "Salmon Nigiri", cuisine: "Japanese", diet: "Any", spice: 0, rating: 4.9, place: "Sushi Go", image: "https://images.unsplash.com/photo-1664337873053-840ea51d271d?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxTcGljeSUyMERhbiUyMERhbiUyME5vb2RsZXN8ZW58MHwwfHx8MTc2MjY4MDIxOXww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" },
 ];
 
 export default function Recommendations({ query, prefs }) {
