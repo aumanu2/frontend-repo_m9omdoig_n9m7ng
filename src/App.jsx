@@ -1,28 +1,44 @@
-import { useState } from 'react'
+import { useState } from "react";
+import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
+import FeaturedCarousel from "./components/FeaturedCarousel";
+import RecommendationGrid from "./components/RecommendationGrid";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [filters, setFilters] = useState({ query: "", diet: "" });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
-        </div>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-rose-50 to-amber-50">
+      <Header />
+
+      <main className="max-w-6xl mx-auto px-4 py-8 space-y-8">
+        <section className="text-center space-y-3">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            Discover your next favorite meal
+          </h2>
+          <p className="text-slate-600 max-w-2xl mx-auto">
+            Search by craving, ingredients, or dietary needs. We’ll surface tasty
+            options instantly.
+          </p>
+        </section>
+
+        <FeaturedCarousel />
+
+        <section className="mt-6">
+          <SearchBar onSearch={(f) => setFilters(f)} />
+        </section>
+
+        <section className="mt-4">
+          <h3 className="text-lg font-semibold mb-3 text-slate-800">Top picks</h3>
+          <RecommendationGrid filters={filters} />
+        </section>
+      </main>
+
+      <footer className="border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+        Crafted with care • FlavorFind © {new Date().getFullYear()}
+      </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
